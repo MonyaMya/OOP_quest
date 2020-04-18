@@ -15,7 +15,6 @@ final class MotorWay extends HighWay {
     private $maxSpeed = 130;
 
 
-    const AUTHORIZED_VEHICULE = Car;
 
     
     public function addVehicle($currentVehicles){

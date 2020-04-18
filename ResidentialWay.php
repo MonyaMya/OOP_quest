@@ -16,8 +16,6 @@ final class ResidentialWay extends HighWay {
 
 
 
-    const AUTHORIZED_VEHICLE = [Bike, Skateboard];
-
     
     public function addVehicle($currentVehicles){
         return ($this->currentVehicles[$currentVehicles]);

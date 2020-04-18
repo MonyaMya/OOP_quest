@@ -13,7 +13,6 @@ final class PedestrianWay extends HighWay {
     private $maxSpeed = 10;
 
 
-    const AUTHORIZED_VEHICULE = Vehicle;
 
     
     public function addVehicle($currentVehicles){
