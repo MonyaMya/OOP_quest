@@ -5,17 +5,17 @@ abstract class HighWay {
     /**
      * @var array
      */
-    private $currentVehicles = array();
+    protected $currentVehicles = array();
 
     /**
      * @var int
      */
-    private $nbLane;
+    protected $nbLane;
 
     /**
      * @var int
      */
-    private $maxSpeed;
+    protected $maxSpeed;
 
 
    
