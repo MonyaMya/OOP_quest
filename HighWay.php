@@ -5,7 +5,7 @@ abstract class HighWay {
     /**
      * @var array
      */
-    protected $currentVehicles = array();
+    protected $currentVehicles;
 
     /**
      * @var int

@@ -17,8 +17,15 @@ final class MotorWay extends HighWay {
 
 
     
-    public function addVehicle($currentVehicles){
-        return ($this->currentVehicles[$currentVehicles]);
+    public function addVehicle(Vehicule $Vehicle){
+
+        if($Vehicle instanceof Car || $Vehicle instanceof Truck) {
+            $this->currentVehicles[]=$Vehicle;
+            echo 'Nice B)';
+        }
+        else {
+            echo 'Not nice B(';
+        }
     }
 
 
