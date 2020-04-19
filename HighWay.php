@@ -56,9 +56,6 @@ abstract class HighWay {
 
 
     
-    public function addVehicle(Vehicule $Vehicle){
-
-    }
-
+    abstract public function addVehicle(Vehicule $Vehicle);
 
 }
