@@ -22,6 +22,11 @@ class Car extends Vehicle
      */
     private $energyLevel;
 
+    /**
+     * @var bool
+     */
+    private $hasParkBrake = true;
+
     public function __construct(string $color, int $nbSeats, string $energy)
     {
         parent::__construct($color, $nbSeats);
@@ -51,5 +56,27 @@ class Car extends Vehicle
         $this->energyLevel = $energyLevel;
     }
 
-}
+    public function setParkBrake(int $parkBrake): bool
+    {
+        $this->parkBrake = $parkBrake;
+    }
 
+    public function start() {
+        if ($this->hasParkBrake===true)    {
+            throw new Exception('Le frein à main est mis !');
+        }
+    return 'Voiture démarée !';
+    }
+
+    public function changeHasParkBrake()
+    {
+        if ($this->hasParkBrake){
+            $this->hasParkBrake=false;
+            echo "Le frein à main a été retiré, vous pouvez démarrer...<br>";
+        } else {
+            $this->hasParkBrake=true;
+        }
+    }
+   
+
+}

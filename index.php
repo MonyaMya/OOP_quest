@@ -27,3 +27,15 @@ echo $truck->load(50);
 var_dump($truck);
 
 
+
+
+try{
+    echo $car->start()."<br>";;
+} catch (Exception $e){
+    if ($e->getMessage()=="ParkBrake is set") {
+        echo "MMMMMHHHHHH not nice."."<br>";
+        echo $car->setParkBrake(false)."<br>";;
+    }
+} finally {
+    echo "Ma voiture roule comme un donut !";
+}
