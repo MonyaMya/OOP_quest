@@ -15,7 +15,6 @@ final class ResidentialWay extends HighWay {
     private $maxSpeed = 50;
 
 
- 
     
     public function addVehicle(Vehicule $Vehicle){
 
